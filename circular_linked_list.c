@@ -38,15 +38,14 @@ int main() {
     p=tmp;
     q=tmp;
    // q->nxt=p;
-    for(i=1;i<n;i++){
+      for(i=0;i<n-1;i++){
     tmp= (struct node * )malloc(sizeof (struct node ));
     printf("Enter the next value of val \n");
     scanf("%d",&val);
     tmp->info=val;
-    tmp->nxt=NULL;
+    tmp->nxt=p;
     q->nxt=tmp;
     q=tmp;
-     q->nxt=p;
     }
         
      break;
