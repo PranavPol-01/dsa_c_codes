@@ -37,7 +37,7 @@ int main() {
     tmp->nxt=NULL;
     p=tmp;
     q=tmp;
-    for(i=1;i<n;i++){
+    for(i=0;i<n-1;i++){
     tmp= (struct node * )malloc(sizeof (struct node ));
     printf("Enter the next value of val \n");
     scanf("%d",&val);
